@@ -1,0 +1,11 @@
+.shipping_address_container{
+    display: flex;
+    gap: 24px;
+}
+
+@media (max-width:431px) {
+    .shipping_address_container{
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+}

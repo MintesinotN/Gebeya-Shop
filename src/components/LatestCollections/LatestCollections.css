@@ -1,0 +1,67 @@
+.LatestCollection{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.LatestCollection h2{
+    font-weight: 600;
+    font-size: 40px;
+    color: #1E1E1E;
+}
+.controller{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 112px;
+    height: 40px;
+}
+.leftArrow{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEA301;
+    border-radius: 100px 0 0 100px;
+}
+.rightArrow{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEA301;
+    border-radius: 0 100px 100px 0;
+}
+
+.toiterate{
+    display: flex;
+    gap: 24px;
+}
+
+@media (max-width:431px) {
+    .controller{
+        display: none;
+    }
+    .LatestCollection h2{
+        font-size: 18px;
+    }
+    .toiterate{
+        gap: 16px;
+        overflow-x: auto;
+        padding-bottom: 24px;
+    }
+    .toiterate::-webkit-scrollbar {
+    height: 4px;
+  }
+}
+
+    ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 16px;
+  }
+    ::-webkit-scrollbar-thumb {
+    background: #222222;
+    border-radius: 10px;
+  }

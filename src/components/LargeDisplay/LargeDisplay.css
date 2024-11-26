@@ -1,0 +1,153 @@
+.large_display{
+    width: 435px;
+    border: 1px solid #C1C1C1;
+    border-radius: 15px;
+}
+.container_padding{
+    margin: 16px;
+}
+.container_sub{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.large_image_display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 403px;
+    height: 258px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+.large_favorite{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    top: 16px;
+    left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.stock{
+    position: absolute;
+    width: 67px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 16px;
+    left: 320px;
+    background-color: white;
+    border-radius: 100px;
+    font-size: 12px;
+}
+.container_reference{
+    position: relative;
+}
+.rating_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #808080;
+}
+.person_description{
+    height: 26px;
+    border: 1px solid #C1C1C1;
+    border-radius: 100px;
+    padding: 4px 10px;
+}
+.rating{
+    display: flex;
+    gap: 2px;
+}
+.cloth_description{
+    margin-top: 16px;
+}
+.cloth_description h2{
+    font-weight: 600;
+    font-size: 24px;
+}
+.cloth_description p{
+    color: #808080;
+    font-size: 18px;
+}
+.price_cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.add_cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 74px;
+    background-color: #FEA301;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    border-radius: 16px;
+}
+
+@media (max-width:431px) {
+    .container_padding{
+        margin: 8px;
+    }
+    .large_image_display{
+        width: 266px;
+        height: 136px;
+        border-radius: 8px;
+    }
+    .container_sub{
+        gap: 8px;
+    }
+    .large_image_display img{
+        width: 124px;
+        height: 141px;
+    }
+    .large_favorite{
+        width: 24px;
+        height: 24px;
+        top: 8px;
+        left: 8px;
+        display: flex;
+    }
+    .large_favorite .icon{
+        width: 15px;
+        height: 15px;
+    }
+    .stock{
+        width: 55px;
+        height: 23px;
+        top: 9px;
+        left: 203px;
+        font-size: 10px;
+    }
+    .person_description{
+        height: 23px;
+        font-size: 14px;
+    }
+    .price_cart{
+        align-items: center;
+    }
+    .add_cart{
+        width: 175px;
+        height: 41px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+    .cloth_description h2{
+        font-size: 16px;
+    }
+    .cloth_description p{
+        font-size: 12px;
+    }
+    .large_display{
+        width: 282px;
+        border-radius: 8px;
+    }
+}

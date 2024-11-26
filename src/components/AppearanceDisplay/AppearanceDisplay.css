@@ -1,0 +1,33 @@
+.cart_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 321px;
+    height: 323px;
+    border-radius: 16px;
+    background-color: #F2F2F2;
+    margin-bottom: 20px;
+}
+.different_view{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+    padding-left: 8px;
+}
+.each_view{
+    width: 64px;
+    height: 64px;
+    background-color: #EFEFEF;
+    border-radius: 8px;
+}
+
+@media (max-width:431px) {
+    .cart_img{
+        width: 334px;
+        height: 238px;
+        border-radius: 8px;
+    }
+    .different_view{
+        padding-left: 12px;
+    }
+}

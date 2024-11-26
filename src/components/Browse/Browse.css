@@ -1,0 +1,57 @@
+/* because of the same content totally us the css of the LatestCollections */
+
+.browse_container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 320px;
+    margin-top: 64px;
+}
+.browse_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-radius: 16px;
+    background-color: #F2F2F2;
+}
+.browse_desc{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+}
+.browse_desc h2{
+    color: #1E1E1E;
+    font-size: 28px;
+    font-weight: 600;
+}
+.browse_desc p{
+    color: #808080;
+    font-size: 20px;
+}
+
+@media (max-width:431px) {
+    .browse_container{
+        gap: 24px;
+        width: 182px;
+        margin-top: 16px;
+    }
+    .browse_img{
+        height: 152px;
+        border-radius: 8px;
+    }
+    .browse_img img{
+        width: 122px;
+        height: 124px;
+    }
+    .browse_desc{
+        gap: 8px;
+    }
+    .browse_desc h2{
+        font-size: 16px;
+    }
+    .browse_desc p{
+        font-size: 12px;
+    }
+}

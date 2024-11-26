@@ -1,0 +1,120 @@
+.delivery{
+    background-color: white;
+    width: 430px;
+    border: 2px solid #C1C1C1;
+    border-radius: 16px;
+    color: #1E1E1E;
+}
+.for_hr{
+    display: none;
+}
+.delivery h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+.delivery hr{
+    color: #C9C9C9;
+}
+.delivery_container{
+    padding: 24px;
+    padding-top: 10px;
+}
+.delivery_container h4{
+    font-weight: 500;
+    font-size: 20px;
+}
+.div_drop{
+    border-radius: 8px;
+    border: 1px solid #C1C1C1;
+    padding-inline: 15px;
+    height: 58px;
+    margin: 10px 0;
+}
+.location_drop{
+    width: 100%;
+    height: 58px;
+    font-size: 16px;
+    border: none;
+}
+.location_drop:focus{
+    outline: none;
+}
+.time_delivery{
+    display: flex;
+    gap: 16px;
+    margin: 32px 0;
+}
+.estimated_time{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.estimated_time h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+.estimated_time p{
+    font-size: 14px;
+}
+.estimated_time p span{
+    font-weight: 500;
+}
+.return_delivery{
+    display: flex;
+    gap: 16px;
+}
+.return_detail{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.return_detail h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+.return_detail p{
+    font-size: 14px;
+}
+.return_detail h5, span{
+    font-weight: 500;
+}
+
+@media (max-width:431px) {
+    .delivery{
+        width: 361px;
+        border: none;
+        border-radius: 0;
+    }
+    .for_hr{
+        display: block;
+    }
+    .delivery h2{
+        font-size: 20px;
+        font-weight: 500;
+        padding: 24px 0;
+    }
+    .div_drop{
+        padding-inline: 15px;
+        height: 46px;
+    }
+    .location_drop{
+        height: 46px;
+        font-size: 14px;
+    }
+    .estimated_time h3{
+        font-size: 16px;
+    }
+    .estimated_time p{
+        font-size: 12px;
+    }
+    .return_detail h3{
+        font-size: 16px;
+    }
+    .return_detail p{
+        font-size: 12px;
+    }
+}

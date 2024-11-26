@@ -1,7 +1,7 @@
 import React from 'react'
 import './SimilarItems.css'
 import LargeDisplay from '../LargeDisplay/LargeDisplay'
-import { items } from '../../asset/Data'
+import { items } from '../../asset/data'
 import { FaChevronDown } from "react-icons/fa";
 
 const SimilarItems = () => {
@@ -41,9 +41,12 @@ const SimilarItems = () => {
             </ul>
             <hr />
             <h3>Similar items you may like</h3>
-            <div className='toiterate'>{
-              display.content.map(disp=>
-              <LargeDisplay disp={disp} />)}
+            <div className='toiterate'>
+              {
+                  display.content.map(disp=>
+                    <LargeDisplay disp={disp} />
+                )
+              }
               </div>
         </div>
     </div>

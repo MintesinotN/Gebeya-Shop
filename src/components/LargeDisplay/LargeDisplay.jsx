@@ -1,9 +1,16 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import './LargeDisplay.css'
 import { IoHeartOutline } from "react-icons/io5";
 import { IoIosStar } from "react-icons/io";
+import { StoreContext } from '../../context/StoreContext';
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const LargeDisplay = ({disp}) => {
+
+  const location = useLocation();
+
+  const {AddToCart} = useContext(StoreContext)
 
   return (
     <div className='large_display'>
@@ -32,10 +39,10 @@ const LargeDisplay = ({disp}) => {
             <h2>{disp.desc}</h2>
             <p>{disp.brand}</p>
             <div className='price_cart'>
-                <h2>{disp.price}</h2>
-                <div className='add_cart'>
+                <h2>${disp.price}</h2>
+                <Link to={location.pathname==='/cart'?'':'cart'} onClick={()=>AddToCart(disp)} className='add_cart'>
                     Add to cart
-                </div>
+                </Link>
             </div>   
         </div>
       </div>

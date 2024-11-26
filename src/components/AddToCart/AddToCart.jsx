@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './AddToCart.css'
 import { FaInstagram } from "react-icons/fa";
 import { RiWhatsappLine } from "react-icons/ri";
 import { BsTwitterX } from "react-icons/bs";
 import { RiShoppingBasketLine } from "react-icons/ri";
+import { Link } from 'react-router-dom';
+import { StoreContext } from '../../context/StoreContext';
 
 const AddToCart = () => {
+
+  const {CartShow} = useContext(StoreContext)
+
   return (
     <div className='add_to_cart'>
       <div>
@@ -18,13 +23,13 @@ const AddToCart = () => {
       </div>
       <div className='pickup'>
         <div className='add_buy'>
-          <div className='add_to'>
+          <Link className='add_to'>
             <RiShoppingBasketLine className='icon' size={24} color='black' />
-            <p>Add to cart</p> 
-          </div>
-          <div className='buy_now'>
+            <p>Save for later</p> 
+          </Link>
+          <Link to='/checkout' onClick={CartShow} className='buy_now'>
             Buy now
-          </div>
+          </Link>
         </div>
         <p className='pick_pay'>Pickup & Pay on collection available</p>
       </div>

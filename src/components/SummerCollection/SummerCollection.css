@@ -41,6 +41,7 @@
     font-weight: 500;
     font-size: 24px;
     margin-bottom: 51px;
+    cursor: pointer;
 }
 .dot p{
     position: absolute;

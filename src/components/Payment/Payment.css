@@ -11,6 +11,9 @@
     font-size: 24px;
     margin-bottom: 24px;
 }
+.payment{
+    display: none;
+}
 .payment_system{
     display: flex;
     gap: 16px;
@@ -23,6 +26,7 @@
     height: 136px;
     border-radius: 8px;
     border: 2px solid #C1C1C1;
+    cursor: pointer;
 }
 .selected_payment_system div{
     background-color: #FEA301;
@@ -79,9 +83,10 @@
     display: none;
 }
 
+
 @media (max-width:431px) {
     .payment_container{
-        width: 313px;
+        width: 331px;
         margin-top: 0;
         border-radius: 0;
         border: none;
@@ -89,6 +94,9 @@
     }
     .payment_container h3{
         font-size: 20px;
+    }
+    .payment{
+        display: block;
     }
     .payment_system{
         gap: 8px;
@@ -136,5 +144,6 @@
         color: white;
         border-radius: 8px;
         margin: 32px -12px;
+        cursor: pointer;
     }
 }

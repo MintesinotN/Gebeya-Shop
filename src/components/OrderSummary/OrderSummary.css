@@ -66,7 +66,51 @@ hr{
     color: white;
     border-radius: 8px;
     margin: 32px 43px;
+    cursor: pointer;
 }
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    width: 290px;
+    max-width: 90%;
+  }
+  
+  .close-btn {
+    padding: 5px 20px;
+    background-color: #fe3019;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    background-color: #c12214;
+  }
+  .non_popup{
+    display: none;
+  }
+  
 
 @media (max-width:431px) {
     .order_summary{

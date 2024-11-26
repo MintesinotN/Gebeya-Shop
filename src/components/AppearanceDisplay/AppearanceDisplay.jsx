@@ -1,18 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './AppearanceDisplay.css'
-import { views,cart } from '../../asset/Data'
+import { StoreContext } from '../../context/StoreContext'
 
 const AppearanceDisplay = () => {
+
+  const {selected} = useContext(StoreContext);
+
   return (
     <div>
       <div className='cart_img'>
-        <img src={cart} alt="" />
+        <img src={selected?.image} alt="" />
       </div>
       <div className='different_view'>
-        <img src={views[0]} className='each_view' />
-        <img src={views[1]} className='each_view' />
-        <img src={views[2]} className='each_view' />
-        <img src={views[3]} className='each_view' />
+        <img src={selected.view?.[0]} className='each_view' />
+        <img src={selected.view?.[1]} className='each_view' />
+        <img src={selected.view?.[2]} className='each_view' />
+        <img src={selected.view?.[3]} className='each_view' />
       </div>
     </div>
   )

@@ -6,7 +6,7 @@ import SummerCollection from '../../components/SummerCollection/SummerCollection
 import Browse from '../Browse/Browse'
 import { FaChevronLeft } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa";
-import { items } from '../../asset/Data'
+import { items } from '../../asset/data'
 
 const LatestCollections = () => {
 

@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Payment.css'
 import { CiCreditCard1 } from "react-icons/ci";
 import { CiWallet } from "react-icons/ci";
 import { TbTransfer } from "react-icons/tb";
+import { StoreContext } from '../../context/StoreContext';
+import { Link } from 'react-router-dom';
 
 const Payment = () => {
+
+  const {ToHome,popup,PopupFunction} = useContext(StoreContext)
+
   return (
     <div className='payment_container'>
       <div>
@@ -73,8 +78,14 @@ const Payment = () => {
             </div>
           </div>
         </div>
-        <div className='place_order_pay'>
+        <div onClick={PopupFunction} className='place_order_pay'>
           <p>Place order</p>
+        </div>
+        <div className={`${popup ? 'non_popup':'popup'}`} >
+        <div className="popup-content">
+          <p>Completed Successfully!</p>
+          <Link to='/' onClick={ToHome} className="close-btn">Close</Link>
+        </div>
         </div>
       </div>
     </div>

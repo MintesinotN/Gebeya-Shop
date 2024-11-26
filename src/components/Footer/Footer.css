@@ -14,6 +14,9 @@
     justify-content: space-around;
     margin-top: 65px;
 }
+.footer_contact_logo *{
+    cursor: pointer;
+}
 .footer_content{
     display: flex;
     gap: 40px;
@@ -48,7 +51,6 @@
     }
     .footer{
         flex-direction: column-reverse;
-        justify-content: space-between;
         margin: 0 16px 0 16px;
         padding-top: 24px;
         padding-bottom: 20px;

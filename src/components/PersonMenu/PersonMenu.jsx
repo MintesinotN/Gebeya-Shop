@@ -1,7 +1,7 @@
 import React from 'react'
 import './PersonMenu.css'
 import SmallDisplay from '../SmallDisplay/SmallDisplay'
-import { items } from '../../asset/Data'
+import { items } from '../../asset/data'
 import { FaChevronRight } from "react-icons/fa";
 
 const PersonMenu = () => {

@@ -6,10 +6,22 @@
     gap: 44px;
     align-items: center;
 }
+.position_menu{
+    position: absolute;
+    top: -10px;
+    left: -24px;
+    z-index: 2;
+}
+.position_menu_off{
+    display: none;
+}
 .menubar{
     display: flex;
     gap: 24px;
     align-items: center;
+}
+.menubar p{
+    cursor: pointer;
 }
 .register{
     display: flex;
@@ -44,6 +56,7 @@
     background-color: #882BEC;
     width: 100%;
     border-radius:0 16px 16px 0;
+    cursor: pointer;
 }
 .space input{
     border: none;
@@ -79,6 +92,9 @@
     top: -2px;
     right: -2px;
     font-size: 10px;
+}
+.to_nullify{
+    display: none;
 }
 
 .register:hover .not_hover{
@@ -150,12 +166,9 @@
 
 @media (max-width: 431px) {
     .container{
-        position: relative;
         margin: 24px;
         height: 32px;
-        display: flex;
         gap: 19px;
-        align-items: center;
     }
     .menu_mobile{
         display: block;
@@ -164,8 +177,6 @@
         display: none;
     }
     .search{
-        display: flex;
-        border: 1px solid #C6C6C6;
         width: 230px;
         height: 32px;
         border-radius: 24px;
@@ -181,12 +192,8 @@
         display: none;
     }
     .cart_logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 32px;
         height: 32px;
-        border-radius: 100%;
         background-color: #222222;
     }
     .cart_count{

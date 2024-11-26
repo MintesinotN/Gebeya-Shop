@@ -6,6 +6,7 @@
 }
 .cart_navbar_container p{
     font-size: 16px;
+    cursor: pointer;
 }
 .selected_cart{
     font-weight: 600;

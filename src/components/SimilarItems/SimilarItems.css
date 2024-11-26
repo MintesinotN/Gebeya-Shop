@@ -15,6 +15,12 @@
     gap: 24px;
     margin-bottom: 42px;
 }
+.other_cart_div hr{
+    display: none;
+}
+.other_cart_div *{
+    cursor: pointer;
+}
 .other_cart_div p{
     display: flex;
     justify-content: center;
@@ -51,12 +57,14 @@
 @media (max-width:431px) {
     .similar_items{
         margin-top: 0;
-        padding-bottom: 82px;
         padding-top: 1px;
         border-radius: 0;
         border: none;
     }
     .other_cart_div{
+        display: block;
+    }
+    .other_cart_div hr{
         display: block;
     }
     .other_cart_div div{

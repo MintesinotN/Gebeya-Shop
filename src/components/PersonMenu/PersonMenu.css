@@ -15,6 +15,7 @@
     border-radius: 100px;
     border: 1px solid #C1C1C1;
     font-size: 24px;
+    cursor: pointer;
 }
 .selected_one{
     background-color: #FEA301;
@@ -36,12 +37,14 @@
     color: white;
     background-color: #882BECF2;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .toiterate_small{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .see_arrow{
     display: none;

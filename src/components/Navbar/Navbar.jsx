@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Navbar.css'
 import { IoIosContact } from "react-icons/io";
 import { FaChevronDown } from "react-icons/fa";
@@ -6,12 +6,21 @@ import { FiSearch } from "react-icons/fi";
 import { RiShoppingBasketLine } from "react-icons/ri";
 import { FaChevronUp } from "react-icons/fa";
 import { VscThreeBars } from "react-icons/vsc";
+import { Link } from 'react-router-dom';
+import { StoreContext } from '../../context/StoreContext';
+import MenuMobile from '../MenuMobile/MenuMobile'
 
 const Navbar = () => {
+
+  const {cartValue,clicked,MenuDisplay} = useContext(StoreContext);
+
   return (
     <div className='container'>
+      <div className={`${clicked?'position_menu_off':'position_menu'}`}>
+      <MenuMobile />
+      </div>
       <div>
-      <VscThreeBars className='icon menu_mobile' size={32} color='black' />
+      <VscThreeBars onClick={MenuDisplay} className='icon menu_mobile' size={32} color='black' />
       </div>
       <img src="/assets/Logo.png" alt="Logo" width={32} height={32} />
       <div className='menubar'>
@@ -26,7 +35,7 @@ const Navbar = () => {
           <p> Sign In</p>
         </div>
         </div>
-        <p className='selected'>Home</p>
+        <Link to='/' className='selected'>Home</Link>
         <p>Men</p>
         <p>Women</p>
         <p>Kids</p>
@@ -70,8 +79,8 @@ const Navbar = () => {
           <div className='cart_logo'>
             <RiShoppingBasketLine className='icon' size={24} color='white' />
           </div>
-          <div className='cart_count'>
-            <p>2</p>
+          <div className={`${cartValue?'cart_count':'to_nullify'}`}>
+            <p>{cartValue}</p>
           </div>
         </div>
     </div>

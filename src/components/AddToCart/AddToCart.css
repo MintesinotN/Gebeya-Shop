@@ -14,6 +14,9 @@
     gap: 24px;
     padding-top: 8px;
 }
+.share_icon *{
+    cursor: pointer;
+}
 .pickup{
     display: flex;
     flex-direction: column;
@@ -85,7 +88,6 @@
         justify-content: center;
     }
     .share_icon{
-        display: flex;
         justify-content: center;
         gap: 16px;
     }

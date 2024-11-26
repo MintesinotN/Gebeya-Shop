@@ -21,6 +21,7 @@
     height: 40px;
     border-radius: 100%;
     background-color: #FEA301;
+    cursor: pointer;
 }
 .brand{
     color: #1E1E1E;
@@ -74,12 +75,12 @@ hr{
     align-items: center;
     gap: 8px;
 }
-.quality_container{
+.quantity_container{
     display: flex;
     align-items: center;
     gap: 16px;
 }
-.quality_container p{
+.quantity_container p{
     font-size: 16px;
 }
 .quantity{
@@ -92,6 +93,9 @@ hr{
     border-radius: 4px;
     color: #222222;
     font-size: 18px;
+}
+.quantity div{
+    cursor: pointer;
 }
 .quantity p{
     font-weight: 600;
@@ -140,6 +144,7 @@ hr{
     font-weight: 500;
     font-size: 16px;
     color: #222222;
+    cursor: pointer;
 }
 .numbers .sizeof{
     border: none;
@@ -149,6 +154,7 @@ hr{
     align-items: center;
     justify-content: start;
     width: 40px;
+    cursor: auto;
 }
 .size_display p{
     font-weight: 500;
@@ -168,6 +174,7 @@ hr{
     width: 32px;
     height: 32px;
     color: #222222;
+    cursor: pointer;
 }
 .colors .colorof{
     border: none;
@@ -178,6 +185,7 @@ hr{
     align-items: center;
     justify-content: start;
     width: 55px;
+    cursor: auto;
 }
 .colors .color_gray{
     border: 2px solid #222222;
@@ -210,13 +218,11 @@ hr{
 @media (max-width:431px) {
     .color_varity_container{
         margin-left: 0px;
-        color: #1E1E1E;
     }
     .assigned_hr{
         display: block;
     }
     .name{
-        display: flex;
         justify-content: center;
     }
     .name h2{
@@ -226,6 +232,9 @@ hr{
         display: none;
     }
     .brand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 16px;
     }
     .hr1{
@@ -239,11 +248,6 @@ hr{
     }
     .price h3{
         font-size: 20px;
-    }
-    .quality_container{
-        display: flex;
-        align-items: center;
-        gap: 16px;
     }
     .quantity{
         height: 32px;
@@ -259,31 +263,10 @@ hr{
     }
     .size_display{
         flex-direction: column;
-        margin-top: 15px;
         gap: 12px;
-    }
-    .numbers{
-        display: flex;
-        gap: 8px;
-    }
-    .numbers p{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 8px;
-        border: 1px solid #C1C1C1;
-        width: 60px;
-        height: 44px;
-        font-weight: 500;
-        font-size: 16px;
-        color: #222222;
     }
     .numbers .sizeof{
         width: 35px;
-    }
-    .size_display p{
-        font-weight: 500;
-        color: black;
     }
     .colors{
         gap: 16px;

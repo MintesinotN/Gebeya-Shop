@@ -1,18 +1,34 @@
-import { createContext,useState } from "react";
+import { createContext,useState,useEffect } from "react";
 
 export const StoreContext = createContext(null)
 
 const StoreContextProvider = (props) => {
 
-    const [popup,setPopup] = useState(true)
+    const [popup,setPopup] = useState(() => JSON.parse(localStorage.getItem("popup")) ?? true)
 
-    const [selected,setSelected] = useState('')
+    const [selected, setSelected] = useState(() => {
+        try {
+          const storedSelected = localStorage.getItem('selected');
+          return storedSelected ? JSON.parse(storedSelected) : '';
+        } catch (error) {
+          console.error('Failed to parse selected item:', error);
+          return '';
+        }
+      });
 
     const [quantity,setQuantity] = useState(1);
 
-    const [cartValue,setCartValue] = useState(0); 
+    const [cartValue,setCartValue] = useState(() => JSON.parse(localStorage.getItem("cartValue")) || 0); 
     
     const [clicked,setClicked] = useState(true);
+
+    useEffect(() => {
+        localStorage.setItem("popup", JSON.stringify(popup));
+    }, [popup]);
+
+    useEffect(() => {
+        localStorage.setItem("cartValue", JSON.stringify(cartValue));
+    }, [cartValue]);
 
     const PopupFunction = () => {
         setPopup(!popup)
@@ -28,8 +44,13 @@ const StoreContextProvider = (props) => {
     }
 
     const AddToCart = (prop) => {
-        setSelected(prop)
-    }
+        try {
+          setSelected(prop);
+          localStorage.setItem('selected', JSON.stringify(prop));
+        } catch (error) {
+          console.error('Failed to save selected item:', error);
+        }
+      };
 
     const MenuDisplay = () => {
         setClicked(value=>!value)

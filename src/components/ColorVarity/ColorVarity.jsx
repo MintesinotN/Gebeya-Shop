@@ -31,7 +31,7 @@ const ColorVarity = () => {
       </div>
       <hr className='hr2' />
       <div className='quantity_container'>
-        <p>Quality:</p>
+        <p>Quantity:</p>
         <div className='quantity'>
           <div onClick={Decrease} className='minus'>-</div>
           <p>{quantity}</p>

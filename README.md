@@ -1,3 +1,9 @@
+![Screenshot](./public/assets/gebeya.png)
+
+## Demo
+
+[Gebeya Market App Website](https://gebeya-shop-d0esiczll-mintesinots-projects.vercel.app/)
+
 # Gebeya Market App Functional Website
 
 It's an E-Commerce Frontend Functional website prepared by using React library and normal css. It displays the clothes with there description.
@@ -8,10 +14,7 @@ It's an E-Commerce Frontend Functional website prepared by using React library a
 2. [Features](#features)
 3. [Technologies Used](#technologies-used)
 4. [Getting Started](#getting-started)
-5. [Figma Design](#figma-design)
-6. [Deployed Website Link](#deployed-website-link)
-7. [Screenshots](#screenshots)
-8. [Acknowledgments](#acknowledgments)
+5. [Acknowledgments](#acknowledgments)
 
 ## Project Overview
 
@@ -54,20 +57,6 @@ To run this project, you need to clone, get into the project and run the command
 **3. Install the Package:** run the command `npm install` on the terminal to install the packages used to build the project.
 
 **4. Run the Project:** to run and open the project use the command `npm run dev` and navigate to the page using the local url displayed.
-
-## Figma Design
-
-The link of the figma for this project is:
-
-[Gebeya Market App Figma Design](https://www.figma.com/design/S34Kv4nFSwSbZSIkdb1ocN/Gebeya-market-app?node-id=0-1&t=YJnsAXc7ven2xO9m-1)
-
-## Deployed Website Link
-
-[Gebeya Market App Website](https://gebeya-shop-d0esiczll-mintesinots-projects.vercel.app/)
-
-## Screenshots
-
-![Screenshot](./public/assets/gebeya.png)
 
 ## Acknowledgments
 

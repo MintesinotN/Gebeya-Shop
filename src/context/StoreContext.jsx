@@ -4,7 +4,13 @@ export const StoreContext = createContext(null)
 
 const StoreContextProvider = (props) => {
 
-    const [popup,setPopup] = useState(() => JSON.parse(sessionStorage.getItem("popup")) ?? true)
+    const [popup, setPopup] = useState(() => {
+        try {
+            return JSON.parse(sessionStorage.getItem("popup")) ?? true;
+        } catch {
+            return true;
+        }
+    });
 
     const [selected, setSelected] = useState(() => {
         try {
@@ -43,14 +49,18 @@ const StoreContextProvider = (props) => {
         setCartValue(value=>value+1)
     }
 
-    const AddToCart = (prop) => {
+const AddToCart = (prop) => {
+    if (prop) {
         try {
-          setSelected(prop);
-          sessionStorage.setItem('selected', JSON.stringify(prop));
+            setSelected(prop);
+            sessionStorage.setItem('selected', JSON.stringify(prop));
         } catch (error) {
-          console.error('Failed to save selected item:', error);
+            console.error('Failed to save selected item:', error);
         }
-      };
+    } else {
+        console.warn('Invalid item passed to AddToCart');
+    }
+};
 
     const MenuDisplay = () => {
         setClicked(value=>!value)

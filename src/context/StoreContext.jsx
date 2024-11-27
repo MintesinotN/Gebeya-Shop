@@ -4,11 +4,11 @@ export const StoreContext = createContext(null)
 
 const StoreContextProvider = (props) => {
 
-    const [popup,setPopup] = useState(() => JSON.parse(localStorage.getItem("popup")) ?? true)
+    const [popup,setPopup] = useState(() => JSON.parse(sessionStorage.getItem("popup")) ?? true)
 
     const [selected, setSelected] = useState(() => {
         try {
-          const storedSelected = localStorage.getItem('selected');
+          const storedSelected = sessionStorage.getItem('selected');
           return storedSelected ? JSON.parse(storedSelected) : '';
         } catch (error) {
           console.error('Failed to parse selected item:', error);
@@ -18,16 +18,16 @@ const StoreContextProvider = (props) => {
 
     const [quantity,setQuantity] = useState(1);
 
-    const [cartValue,setCartValue] = useState(() => JSON.parse(localStorage.getItem("cartValue")) || 0); 
+    const [cartValue,setCartValue] = useState(() => JSON.parse(sessionStorage.getItem("cartValue")) || 0); 
     
     const [clicked,setClicked] = useState(true);
 
     useEffect(() => {
-        localStorage.setItem("popup", JSON.stringify(popup));
+        sessionStorage.setItem("popup", JSON.stringify(popup));
     }, [popup]);
 
     useEffect(() => {
-        localStorage.setItem("cartValue", JSON.stringify(cartValue));
+        sessionStorage.setItem("cartValue", JSON.stringify(cartValue));
     }, [cartValue]);
 
     const PopupFunction = () => {
@@ -46,7 +46,7 @@ const StoreContextProvider = (props) => {
     const AddToCart = (prop) => {
         try {
           setSelected(prop);
-          localStorage.setItem('selected', JSON.stringify(prop));
+          sessionStorage.setItem('selected', JSON.stringify(prop));
         } catch (error) {
           console.error('Failed to save selected item:', error);
         }

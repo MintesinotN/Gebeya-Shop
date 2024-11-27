@@ -4,6 +4,14 @@ export const StoreContext = createContext(null)
 
 const StoreContextProvider = (props) => {
 
+    const [routeTo,setRouteTo] = useState(() => {
+        try {
+            return JSON.parse(sessionStorage.getItem("routeTo")) ?? false;
+        } catch {
+            return false;
+        }
+    });
+
     const [popup, setPopup] = useState(() => {
         try {
             return JSON.parse(sessionStorage.getItem("popup")) ?? true;
@@ -54,6 +62,8 @@ const AddToCart = (prop) => {
         try {
             setSelected(prop);
             sessionStorage.setItem('selected', JSON.stringify(prop));
+            setRouteTo(true);
+            sessionStorage.setItem('routeTo', JSON.stringify(true));
         } catch (error) {
             console.error('Failed to save selected item:', error);
         }
@@ -77,6 +87,7 @@ const AddToCart = (prop) => {
     }
 
     const contextValue = {
+        routeTo,
         ToHome,
         popup,
         PopupFunction,

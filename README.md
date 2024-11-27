@@ -67,7 +67,7 @@ The link of the figma for this project is:
 
 ## Screenshots
 
-![Screenshot](/assets/gebeya.png)
+![Screenshot](./public/assets/gebeya.png)
 
 ## Acknowledgments
 

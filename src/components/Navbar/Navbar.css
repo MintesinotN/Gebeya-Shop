@@ -1,6 +1,8 @@
 .container{
     position: relative;
-    margin: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 64px;
     height: 46.5px;
     display: flex;
     justify-content: space-between;

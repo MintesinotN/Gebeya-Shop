@@ -1,9 +1,9 @@
 .container{
     position: relative;
-    margin: 24px 80px;
+    margin: 24px;
     height: 46.5px;
     display: flex;
-    gap: 44px;
+    justify-content: space-between;
     align-items: center;
 }
 .position_menu{
@@ -15,26 +15,38 @@
 .position_menu_off{
     display: none;
 }
+.no_logo{
+    display: none;
+}
 .menubar{
     display: flex;
-    gap: 24px;
+    justify-content: space-between;
     align-items: center;
 }
 .menubar p{
     cursor: pointer;
+    padding-right: 20px;
 }
 .register{
     display: flex;
     align-items: center;
     gap: 4px;
 }
+.register p{
+    white-space: nowrap;
+    padding-right: 0;
+}
 .selected{
     font-weight: 600;
+    padding-left: 20px;
 }
 .more{
     display: flex;
     align-items: center;
     gap: 4px;
+}
+.more p{
+    padding-right: 0;
 }
 .search{
     display: flex;
@@ -107,13 +119,9 @@
     display: block;
 }
 .register:hover .register_hover{
-    position: absolute;
-    top: 60px;
-    left: 80px;
     background-color: white;
     width: 194px;
     display: block;
-    z-index: 10;
     border: 1px solid #C1C1C1;
 }
 .register_hover{
@@ -128,6 +136,13 @@
 .register_hover hr{
     margin: 10px 0;
 }
+.register_hover_container{
+    position: absolute;
+    top: 40px;
+    margin-top: -5px;
+    z-index: 2;
+    padding-top: 10px;
+}
 .more:hover .not_hover{
     display: none;
 }
@@ -141,13 +156,9 @@
     display: none;
 }
 .more:hover .hover_output{
-    position: absolute;
-    top: 60px;
-    left: 610px;
     background-color: white;
     width: 194px;
     display: block;
-    z-index: 10;
     border: 1px solid #C1C1C1;
 }
 .hover_output p{
@@ -159,16 +170,22 @@
 .hover_output hr{
     margin: 10px 0;
 }
+.more_hover_container{
+    position: absolute;
+    top: 40px;
+    margin-top: -5px;
+    z-index: 2;
+    padding-top: 10px;
+}
 
 .menu_mobile{
     display: none;
 }
 
-@media (max-width: 431px) {
+@media (max-width: 1201px) {
     .container{
         margin: 24px;
         height: 32px;
-        gap: 19px;
     }
     .menu_mobile{
         display: block;
@@ -201,5 +218,11 @@
         right: -3px;
         width: 14px;
         height: 14px;
+    }
+}
+
+@media (max-width: 431px) {
+    .search{
+        width: 120px;
     }
 }

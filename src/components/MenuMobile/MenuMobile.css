@@ -1,40 +1,46 @@
 .menu_for_mobile{
-    width: 215px;
-    height: 400px;
-    background-color: white;
+    display: none;
 }
-.menu_for_mobile p{
-    padding-left: 20px;
-    padding-bottom: 15px;
-}
-.cancel{
-    display: flex;
-    gap: 20px;
-    padding-left: 20px;
-}
-.register_mobile{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.register_mobile p{
-    padding-bottom: 0px;
-}
-.more_mobile{
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-.more_mobile p{
-    padding-bottom: 0px;
-}
-.currency_mobile{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding-left: 20px;
-}
-.currency_mobile p{
-    padding-left: 0px;
-    padding-bottom: 0px;
+@media (max-width: 1201px) {
+    .menu_for_mobile{
+        display: block;
+        width: 215px;
+        height: 400px;
+        background-color: white;
+    }
+    .menu_for_mobile p{
+        padding-left: 20px;
+        padding-bottom: 15px;
+    }
+    .cancel{
+        display: flex;
+        gap: 20px;
+        padding-left: 20px;
+    }
+    .register_mobile{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .register_mobile p{
+        padding-bottom: 0px;
+    }
+    .more_mobile{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    .more_mobile p{
+        padding-bottom: 0px;
+    }
+    .currency_mobile{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding-left: 20px;
+    }
+    .currency_mobile p{
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
 }

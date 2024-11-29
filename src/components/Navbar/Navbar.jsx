@@ -6,13 +6,19 @@ import { FiSearch } from "react-icons/fi";
 import { RiShoppingBasketLine } from "react-icons/ri";
 import { FaChevronUp } from "react-icons/fa";
 import { VscThreeBars } from "react-icons/vsc";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
 import MenuMobile from '../MenuMobile/MenuMobile'
 
 const Navbar = () => {
 
   const {cartValue,clicked,MenuDisplay} = useContext(StoreContext);
+
+  const navigate = useNavigate()
+
+  const BackToHome = () => {
+    navigate('/');
+  }
 
   return (
     <div className='container'>
@@ -22,20 +28,22 @@ const Navbar = () => {
       <div>
       <VscThreeBars onClick={MenuDisplay} className='icon menu_mobile' size={32} color='black' />
       </div>
-      <img src="/assets/Logo.png" alt="Logo" width={32} height={32} />
+      <img src="/assets/Logo.png" alt="Logo" width={32} height={32} className={`${clicked ? '':'no_logo'}`} />
       <div className='menubar'>
         <div className='register'>
         <IoIosContact size={20} color='#1E1E1E' className='icon' />
         <p>Register/Sign in</p>
         <FaChevronDown className='icon not_hover' size={12} color='#1E1E1E' />
         <FaChevronUp className='icon is_hover' size={12} color='#1E1E1E' />
+        <div className='register_hover_container'>
         <div className='register_hover'>
           <p>Register</p>
           <hr />
           <p> Sign In</p>
         </div>
         </div>
-        <Link to='/' className='selected'>Home</Link>
+        </div>
+        <p onClick={BackToHome} className='selected'>Home</p>
         <p>Men</p>
         <p>Women</p>
         <p>Kids</p>
@@ -44,6 +52,7 @@ const Navbar = () => {
           <p>More</p>
           <FaChevronDown className='icon not_hover' size={12} color='#1E1E1E' />
           <FaChevronUp className='icon is_hover' size={12} color='#1E1E1E' />
+          <div className='more_hover_container'>
           <div className='hover_output'>
             <p>Perfumes</p>
             <hr />
@@ -58,6 +67,7 @@ const Navbar = () => {
             <p>Pyjamas</p>
             <hr />
             <p>Slippers</p>
+          </div>
           </div>
         </div>
       </div>

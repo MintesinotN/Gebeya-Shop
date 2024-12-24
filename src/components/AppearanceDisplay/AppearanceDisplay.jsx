@@ -7,7 +7,7 @@ const AppearanceDisplay = () => {
   const {selected} = useContext(StoreContext);
 
   return (
-    <div>
+    <div className='appearance_container'>
       <div className='cart_img'>
         <img src={selected?.image} alt="" />
       </div>

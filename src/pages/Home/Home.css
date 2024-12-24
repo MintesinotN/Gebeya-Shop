@@ -1,9 +1,9 @@
 .homeContainer{
-    margin: 100px 80px 160px 80px;
+    margin: 10.6vw 5.2vw 34.6vw 5.2vw;
 }
 
 @media (max-width:431px) {
     .homeContainer{
-        margin: 40px 24px 64px 24px;
+        margin: 9.1vw 5.5vw 14.6vw 5.5vw;
     }
 }

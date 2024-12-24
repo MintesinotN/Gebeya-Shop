@@ -35,12 +35,6 @@ hr{
     color: #C9C9C9;
     margin: 20px 0;
 }
-.hr1{
-    width: 394px;
-}
-.hr2{
-    width: 492px;
-}
 .price{
     display: flex;
     align-items: center;
@@ -88,7 +82,6 @@ hr{
     justify-content: space-between;
     align-items: center;
     width: 136px;
-    height: 45px;
     border: 1px solid #222222;
     border-radius: 4px;
     color: #222222;
@@ -128,6 +121,7 @@ hr{
     align-items: center;
     margin-top: 15px;
     gap: 50px;
+    flex-wrap: wrap;
 }
 .numbers{
     display: flex;
@@ -262,14 +256,12 @@ hr{
         font-size: 32px;
     }
     .size_display{
-        flex-direction: column;
-        gap: 12px;
+        display: none;
     }
     .numbers .sizeof{
         width: 35px;
     }
     .colors{
-        gap: 16px;
         margin-top: 24px;
     }
     .colors .colorof{

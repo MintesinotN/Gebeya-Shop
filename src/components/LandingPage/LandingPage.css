@@ -1,73 +1,85 @@
 .container_1{
     position: relative;
     background-color: #882BEC;
-    height: 769px;
+    height: 50vw;
     color: white;
 }
 .gebeya{
     position: absolute;
-    font-size: 128px;
+    font-size: 8.4vw;
     font-family: 'Alfa Slab One', serif;
-    top: 103px;
-    left: 80px;
+    top: 6.7vw;
+    left: 5.1vw;
 }
 .feature1{
     position: absolute;
     border-radius: 100%;
-    top: 78px;
-    left: 606px;
+    top: 5.1vw;
+    left: 39.5vw;
+}
+.feature1 img{
+    width: 19.525vw;
+    height: 19.525vw;
 }
 .moto{
     position: absolute;
-    width: 435px;
-    top: 116px;
-    left: 997px;
-    font-size: 20px;
+    width: 27vw;
+    top: 7.5vw;
+    left: 65.5vw;
+    font-size: 1.3vw;
 }
 .shop{
     position: absolute;
-    top: 276px;
-    left: 1007px;
-    font-size: 128px;
+    top: 18vw;
+    left: 65.5vw;
+    font-size: 8.4vw;
     font-family: 'Alfa Slab One', serif;
 }
 .feature2{
     position: absolute;
     border-radius: 100%;
-    top: 358px;
-    left: 188px;
+    top: 23.4vw;
+    left:12.2vw;
+}
+.feature2 img{
+    width: 16.9vw;
+    height: 16.9vw;
 }
 .explore_button{
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 366px;
-    height: 66px;
+    width: 24vw;
+    height: 4.4vw;
     background-color: #FEA301;
     color: #222222;
-    font-size: 24px;
+    font-size: 1.6vw;
     font-weight: 500;
-    top: 528px;
-    left: 573px;
+    top: 34.4vw;
+    left: 37.2vw;
     border-radius: 8px;
     cursor: pointer;
 }
 .feature3{
     position: absolute;
     border-radius: 100%;
-    top: 482px;
-    left: 1057px;
+    top: 31.5vw;
+    left: 68.8vw;
 }
-@media (max-width:431px) {
+.feature3 img{
+    width: 14.6vw;
+    height: 14.6vw;
+}
+@media (max-width:751px) {
     .container_1{
-        height: 373px;
+        height: 86.5vw;
     }
     .gebeya {
         visibility: hidden;
-        font-size: 32px;
-        top: 30px;
-        left: 24px;
+        font-size: 7.4vw;
+        top: 7.3vw;
+        left: 6vw;
       }
       .gebeya::before {
         content: "TIMBU";
@@ -76,33 +88,34 @@
       .feature1{
         width: 120px;
         height: 120px;
-        top: 26px;
-        left: 157px;
+        top: 6vw;
+        left: 37vw;
     }
     .feature1 img{
-        width: 120px;
-        height: 120px;
+        width: 28vw;
+        height: 28vw;
     }
     .moto{
-        width: 337px;
-        top: 195px;
-        left: 44px;
-        font-size: 12px;
+        width: 76vw;
+        top: 45.3vw;
+        left: 10vw;
+        font-size: 2.8vw;
         text-align: center;
     }
     .shop{
-        top: 115px;
-        left: 299px;
-        font-size: 32px;
+        top: 27vw;
+        left: 69.2vw;
+        font-size: 7.4vw;
     }
     .feature2,.feature3{
         display: none;
     }
     .explore_button{
-        height: 44px;
+        width: 85.5vw;
+        height: 10.3vw;
         color: white;
-        font-size: 16px;
-        top: 280px;
-        left: 24px;
+        font-size: 3.7vw;
+        top: 65vw;
+        left: 5vw;
     }
 }

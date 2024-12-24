@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className='outer_footer'>
     <div className='footer'>
-        <div>
+        <div className='footer_logos'>
         <img src="./assets/footer_logo.png" alt="" width={207.17} height={151.22} />
         <div className='footer_contact_logo'>
           <FaInstagram className='icon' size={24} color='white' />

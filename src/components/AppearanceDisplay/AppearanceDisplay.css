@@ -21,7 +21,21 @@
     border-radius: 8px;
 }
 
+@media (max-width: 1035px) {
+    .appearance_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media (max-width:431px) {
+    .appearance_container{
+        overflow-x: auto;
+    }
+    .appearance_container::-webkit-scrollbar{
+        display: none;
+    }
     .cart_img{
         width: 334px;
         height: 238px;

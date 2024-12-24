@@ -37,8 +37,12 @@
 
 .toiterate{
     display: flex;
+    overflow-x: auto;
     gap: 24px;
 }
+.toiterate::-webkit-scrollbar {
+    height: 0px;
+  }
 
 @media (max-width:431px) {
     .controller{
@@ -49,7 +53,6 @@
     }
     .toiterate{
         gap: 16px;
-        overflow-x: auto;
         padding-bottom: 24px;
     }
     .toiterate::-webkit-scrollbar {

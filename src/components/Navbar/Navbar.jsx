@@ -28,7 +28,7 @@ const Navbar = () => {
       <div>
       <VscThreeBars onClick={MenuDisplay} className='icon menu_mobile' size={32} color='black' />
       </div>
-      <img src="/assets/Logo.png" alt="Logo" width={32} height={32} className={`${clicked ? '':'no_logo'}`} />
+      <img src="/assets/Logo.png" alt="Logo" width={32} height={32} className={`${clicked ? 'logo_logo':'no_logo'}`} />
       <div className='menubar'>
         <div className='register'>
         <IoIosContact size={20} color='#1E1E1E' className='icon' />

@@ -18,7 +18,7 @@ const LargeDisplay = ({disp}) => {
         <div className='container_sub'>
             <div className='container_reference'>
                 <div className='large_image_display'>
-                  <img src={disp.image} alt="" />
+                  <img src={disp.image} alt={disp.brand} />
                 </div>
                 <div className='large_favorite'>
                     <IoHeartOutline className='icon' size={25} color='black' />

@@ -14,7 +14,7 @@ const OrderSummary = () => {
         <div className='taxation'>
         <div className='order_description'>
           <div className='order_img'>
-            <img src={selected.view?.[0]} alt="" />
+            <img src={selected.view?.[0]} alt="Choice Item" />
           </div>
           <div className='order_head'>
             <h4>{selected.desc}</h4>

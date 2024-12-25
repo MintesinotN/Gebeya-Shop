@@ -8,7 +8,7 @@ const LandingPage = () => {
         Gebeya
       </div>
       <div className='feature1'>
-        <img src="/assets/Feature1.png" alt="" width={300} height={300} />
+        <img src="/assets/Feature1.png" alt="Model 1" width={300} height={300} />
       </div>
       <div className='moto'>
         <p>
@@ -19,13 +19,13 @@ const LandingPage = () => {
         SHOP
       </div>
       <div className='feature2'>
-        <img src="/assets/Feature2.png" alt="" width={260} height={260} />
+        <img src="/assets/Feature2.png" alt="Model 2" width={260} height={260} />
       </div>
       <div className='explore_button'>
         <p>Explore Now</p>
       </div>
       <div className='feature3'>
-        <img src="/assets/Feature3.png" alt="" width={223} height={223} />
+        <img src="/assets/Feature3.png" alt="Model 3" width={223} height={223} />
       </div>
     </div>
   )

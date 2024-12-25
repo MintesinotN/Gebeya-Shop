@@ -31,7 +31,7 @@ const MenuMobile = () => {
         </div>
         <hr />
         <div className='currency_mobile'>
-        <img src="/assets/united kingdom.png" alt="" width={24} height={24} />
+        <img src="/assets/united kingdom.png" alt="Currency" width={24} height={24} />
         <p>EN/Currency</p>
         <FaChevronRight size={12} color='#1E1E1E' />
         </div>

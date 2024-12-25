@@ -74,14 +74,14 @@ const Navbar = () => {
       <div className='search'>
         <div className='space'>
         <FiSearch className='icon' size={20} color='#1E1E1E' />
-        <input type="text" placeholder='Search' />
+        <input id='Search' type="text" placeholder='Search' />
         </div>
         <div className='button'>
           <FiSearch className='icon' size={26} color='white' />
         </div>
       </div>
       <div className='currency'>
-        <img src="/assets/united kingdom.png" alt="" width={24} height={24} />
+        <img src="/assets/united kingdom.png" alt="Currency" width={24} height={24} />
         <p>EN/Currency</p>
           <FaChevronDown className='icon' size={12} color='#1E1E1E' />
         </div>

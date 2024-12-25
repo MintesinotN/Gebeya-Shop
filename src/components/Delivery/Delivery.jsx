@@ -15,7 +15,7 @@ const Delivery = () => {
             <div>
                 <h4>Location</h4>
                 <div className='div_drop'>
-                <select name="" id="dropdownId" className='location_drop'>
+                <select name="Dropdown_Delivery" id="dropdownId1" className='location_drop'>
                   <option value="" disabled selected>Location</option>
                   <option value="value1">Option 1</option>
                   <option value="value2">Option 2</option>
@@ -23,7 +23,7 @@ const Delivery = () => {
                 </select>
                 </div>
                 <div className='div_drop'>
-                <select name="dropdownName" id="dropdownId" className='location_drop'>
+                <select name="dropdown_Delivery2" id="dropdownId2" className='location_drop'>
                   <option value="" disabled selected>Sub-location</option>
                   <option value="value1">Option 1</option>
                   <option value="value2">Option 2</option>

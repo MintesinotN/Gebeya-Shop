@@ -1,14 +1,12 @@
 import React from 'react'
 import './Browse.css'
-import { FaChevronLeft } from "react-icons/fa6";
-import { FaChevronRight } from "react-icons/fa";
 
 const Browse = ({disp}) => {
   return (
     <div>
       <div className='browse_container'>
         <div className='browse_img'>
-          <img src={disp.image} alt="" />
+          <img src={disp.image} alt={disp.type} />
         </div>
         <div className='browse_desc'>
             <h2>

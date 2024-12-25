@@ -9,7 +9,7 @@ const ShippingAddress = () => {
             <h3>Shipping Address</h3>
             <label htmlFor="Name">Name</label>
             <div className='div_drop_ship'>
-            <input type="text" id='Name' placeholder='First & Last Name' className='shipping_drop' />
+            <input type="text" id='NameOf' placeholder='First & Last Name' className='shipping_drop' />
             </div>
             <label htmlFor="Address1">Address 1</label>
             <div className='div_drop_ship'>
@@ -29,7 +29,7 @@ const ShippingAddress = () => {
                 <div className='to_contain'>
                     <label htmlFor="State">State</label>
                     <div className='div_ship'>
-                    <select name="" id="State" className='shipping_drop' >
+                    <select name="State" id="State" className='shipping_drop' >
                     <option value="" disabled selected>Select State</option>
                     <option value="value1">Option 1</option>
                     <option value="value2">Option 2</option>

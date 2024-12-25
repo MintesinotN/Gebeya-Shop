@@ -48,7 +48,7 @@ const Payment = () => {
         <div className='to_payment_contain'>
             <label htmlFor="Expiry">Expiry</label>
             <div className='div_payment'>
-            <select name="" id="Expiry" className='shipping_drop' >
+            <select name="Expiry" id="Expiry" className='shipping_drop' >
             <option value="" disabled selected>MM</option>
             <option value="value1">Option 1</option>
             <option value="value2">Option 2</option>
@@ -58,7 +58,7 @@ const Payment = () => {
           </div>
           <div className='to_payment_contain'>
             <div className='div_payment'>
-            <select name="" id="Year" className='shipping_drop' >
+            <select name="Year" id="Year" className='shipping_drop' >
             <option value="" disabled selected>Select State</option>
             <option value="value1">Option 1</option>
             <option value="value2">Option 2</option>
@@ -69,7 +69,7 @@ const Payment = () => {
           <div className='to_payment_contain'>
             <label htmlFor="CVV">CVV</label>
             <div className='div_payment'>
-            <select name="" id="CVV" className='shipping_drop' >
+            <select name="CVV" id="CVV" className='shipping_drop' >
             <option value="" disabled selected>CVV</option>
             <option value="value1">Option 1</option>
             <option value="value2">Option 2</option>

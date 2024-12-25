@@ -14,13 +14,11 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <main role='main'>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/cart' element={routeTo ? <Cart /> : <Navigate to='/' replace /> } />
         <Route path='/checkout' element={routeTo ? <Checkout /> : <Navigate to='/' replace /> } />
       </Routes>
-      </main>
       <Footer />
     </div>
   )

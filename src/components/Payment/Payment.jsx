@@ -58,7 +58,7 @@ const Payment = () => {
           </div>
           <div className='to_payment_contain'>
             <div className='div_payment'>
-            <select name="Year" id="Year" className='shipping_drop' >
+            <select name="Year" className='shipping_drop' >
             <option value="" disabled selected>Select State</option>
             <option value="value1">Option 1</option>
             <option value="value2">Option 2</option>

@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <main>
+      <main role='main'>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/cart' element={routeTo ? <Cart /> : <Navigate to='/' replace /> } />

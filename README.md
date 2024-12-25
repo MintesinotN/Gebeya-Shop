@@ -2,7 +2,7 @@
 
 ## Demo
 
-[Gebeya Market App Website](https://gebeya-shop-d0esiczll-mintesinots-projects.vercel.app/)
+[Gebeya Market App Website](https://gebeya-shop-nine.vercel.app/)
 
 # Gebeya Market App Functional Website
 

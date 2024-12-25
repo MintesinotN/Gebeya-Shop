@@ -17,19 +17,19 @@ const Payment = () => {
         <h3>Payment method</h3>
         <hr className="payment" />
         <div className='payment_system'>
-          <div className='selected_payment_system'>
+          <div className='selected_payment_system payment_options'>
             <div className='name_payment'>
               <CiCreditCard1 className='icon' size={32} color='white' />
               <p>Card</p>
             </div>
           </div>
-          <div>
+          <div className='payment_options'>
             <div className='name_payment'>
               <CiWallet className='icon' size={32} color='#808080' />
               <p>Wallet</p>
             </div>
           </div>
-          <div>
+          <div className='payment_options'>
             <div className='name_payment'>
               <TbTransfer className='icon' size={32} color='#808080' />
               <p>Bank transfer</p>
@@ -45,7 +45,7 @@ const Payment = () => {
         <input type="text" id='Card' placeholder='0000  0000  0000  0000' className='payment_drop' />
         </div>
         <div className='payment_form'>
-        <div>
+        <div className='to_payment_contain'>
             <label htmlFor="Expiry">Expiry</label>
             <div className='div_payment'>
             <select name="" id="Expiry" className='shipping_drop' >
@@ -56,7 +56,7 @@ const Payment = () => {
             </select>
             </div>
           </div>
-          <div>
+          <div className='to_payment_contain'>
             <div className='div_payment'>
             <select name="" id="Year" className='shipping_drop' >
             <option value="" disabled selected>Select State</option>
@@ -66,7 +66,7 @@ const Payment = () => {
             </select>
             </div>
           </div>
-          <div>
+          <div className='to_payment_contain'>
             <label htmlFor="CVV">CVV</label>
             <div className='div_payment'>
             <select name="" id="CVV" className='shipping_drop' >

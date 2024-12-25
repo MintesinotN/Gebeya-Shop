@@ -3,7 +3,7 @@
     gap: 24px;
 }
 
-@media (max-width:431px) {
+@media (max-width:1230px) {
     .shipping_address_container{
         flex-direction: column-reverse;
         gap: 0;

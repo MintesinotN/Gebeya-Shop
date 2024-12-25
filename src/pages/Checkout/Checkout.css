@@ -4,13 +4,18 @@
     color: #1E1E1E;
 }
 
-@media (max-width:431px) {
+@media (max-width: 1230px) {
+    .giving_border{
+        border: 2px solid #C1C1C1;
+    }
+}
+
+@media (max-width:600px) {
     .container_checkout{
-        padding: 24px;
+        padding: 12px;
         padding-bottom: 64px;
     }
     .giving_border{
         border: 2px solid #C1C1C1;
-        border-radius: 8px;
     }
 }

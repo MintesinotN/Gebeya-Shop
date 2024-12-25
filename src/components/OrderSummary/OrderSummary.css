@@ -2,8 +2,8 @@
     background-color: white;
     border: 2px solid #C1C1C1;
     border-radius: 16px;
-    width: 100%;
     height: 501px;
+    min-width: 345px;
 }
 .order_summary p{
     font-size: 16px;
@@ -60,12 +60,11 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 350px;
     height: 53px;
     background-color: #FEA301;
     color: white;
     border-radius: 8px;
-    margin: 32px 43px;
+    margin: 24px 24px;
     cursor: pointer;
 }
 
@@ -110,6 +109,17 @@ hr{
   .non_popup{
     display: none;
   }
+
+  @media (max-width: 1230px) {
+    .order_summary{
+        border: none;
+        border-radius: 0;
+        height: 100%;
+    }
+    .place_order{
+        display: none;
+    }
+  }
   
 
 @media (max-width:431px) {
@@ -117,6 +127,7 @@ hr{
         border: none;
         border-radius: 0;
         height: 344px;
+        min-width: 230px;
     }
     .order_summary p{
         font-size: 14px;
@@ -131,8 +142,5 @@ hr{
     }
     .order_head h4{
         font-size: 18px;
-    }
-    .place_order{
-        display: none;
     }
 }

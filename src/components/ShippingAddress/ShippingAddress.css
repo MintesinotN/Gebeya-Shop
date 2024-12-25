@@ -1,5 +1,5 @@
 .shipping_container{
-    width: 893px;
+    width: 100%;
     padding: 24px;
     background-color: white;
     border-radius: 16px;
@@ -40,7 +40,6 @@
     gap: 24px;
 }
 .div_ship input,select{
-    width: 250px;
     height: 56px;
     font-size: 16px;
     font-weight: 500;
@@ -53,19 +52,22 @@
     height: 58px;
     margin: 10px 0;
 }
+.address_form .to_contain{
+    flex-basis: 33.33%;
+}
 .div_ship input{
     outline: none;
     border: none;
 }
 .div_ship select{
-    width: 250px;
+    min-width: 175px;
 }
 
-@media (max-width:431px) {
+@media (max-width:1230px) {
     .shipping_container{
-        width: 331px;
         border-radius: 0;
         border: none;
+        width: inherit;
     }
     .hr_of_address{
         display: block;
@@ -74,7 +76,6 @@
         padding-inline: 8px;
         height: 46px;
         margin: 0;
-        width: 300px;
     }
     .shipping_drop{
         height: 46px;
@@ -87,11 +88,9 @@
         font-size: 14px;
     }
     .address_form{
-        flex-wrap: wrap;
         gap: 8px;
     }
     .div_ship input,select{
-        width: 136px;
         height: 46px;
         font-size: 14px;
     }
@@ -100,7 +99,10 @@
         height: 46px;
         margin: 0;
     }
-    .div_ship select{
-        width: 136px;
+}
+
+@media (max-width: 820px) {
+    .address_form{
+        flex-wrap: wrap;
     }
 }

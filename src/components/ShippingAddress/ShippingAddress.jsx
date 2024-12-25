@@ -20,13 +20,13 @@ const ShippingAddress = () => {
             <input type="text" id='Address2' placeholder='23rd, Boulevard Ave' className='shipping_drop' />
             </div>
             <div className='address_form'>
-                <div>
+                <div className='to_contain'>
                     <label htmlFor="City">City</label>
                     <div className='div_ship'>
                     <input type="text" id='City' placeholder='Enter City' />
                     </div>
                 </div>
-                <div>
+                <div className='to_contain'>
                     <label htmlFor="State">State</label>
                     <div className='div_ship'>
                     <select name="" id="State" className='shipping_drop' >
@@ -37,7 +37,7 @@ const ShippingAddress = () => {
                     </select>
                     </div>
                 </div>
-                <div>
+                <div className='to_contain'>
                     <label htmlFor="Zip">Zip</label>
                     <div className='div_ship'>
                     <input type="text" id='Zip' placeholder='Zip code' />

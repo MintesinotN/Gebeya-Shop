@@ -6,6 +6,7 @@ import Checkout from './pages/Checkout/Checkout'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import { StoreContext } from './context/StoreContext'
+import ScrollToTop from './components/ScrollToTop'
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/cart' element={routeTo ? <Cart /> : <Navigate to='/' replace /> } />

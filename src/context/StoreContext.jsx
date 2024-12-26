@@ -96,6 +96,7 @@ const AddToCart = (prop) => {
         Increase,
         Decrease,
         clicked,
+        setClicked,
         MenuDisplay,
         cartValue,
         AddToCart,

@@ -29,7 +29,7 @@ const LatestCollections = () => {
         <div className='toiterate'>
         {
             display.content.map(disp=>
-            <LargeDisplay disp={disp} />
+            <LargeDisplay key={disp.desc} disp={disp} />
             )
         }
         </div>
@@ -49,7 +49,7 @@ const LatestCollections = () => {
         <div className='toiterate'>
             {
                 display_br.content.map(disp=>
-                    <Browse disp={disp} />
+                    <Browse key={disp.desc} disp={disp} />
                 )
             }
         </div>

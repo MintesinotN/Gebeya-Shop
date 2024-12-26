@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useRef } from 'react'
 import './Navbar.css'
 import { IoIosContact } from "react-icons/io";
 import { FaChevronDown } from "react-icons/fa";
@@ -6,13 +6,15 @@ import { FiSearch } from "react-icons/fi";
 import { RiShoppingBasketLine } from "react-icons/ri";
 import { FaChevronUp } from "react-icons/fa";
 import { VscThreeBars } from "react-icons/vsc";
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
 import MenuMobile from '../MenuMobile/MenuMobile'
 
 const Navbar = () => {
 
-  const {cartValue,clicked,MenuDisplay} = useContext(StoreContext);
+  const {cartValue,clicked,setClicked,MenuDisplay} = useContext(StoreContext);
+
+  const menuRef = useRef(null)
 
   const navigate = useNavigate()
 
@@ -20,9 +22,22 @@ const Navbar = () => {
     navigate('/');
   }
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setClicked(true);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div className='container'>
-      <div className={`${clicked?'position_menu_off':'position_menu'}`}>
+      <div ref={menuRef} className={`${clicked?'position_menu_off':'position_menu'}`}>
       <MenuMobile />
       </div>
       <div>

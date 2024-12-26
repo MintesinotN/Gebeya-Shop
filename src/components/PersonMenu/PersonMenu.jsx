@@ -21,7 +21,7 @@ const PersonMenu = () => {
         <div className='toiterate_small'>
           {
             display.content.map(disp=>
-              <SmallDisplay disp={disp} />
+              <SmallDisplay key={disp.desc} disp={disp} />
             )
           }
         </div>
